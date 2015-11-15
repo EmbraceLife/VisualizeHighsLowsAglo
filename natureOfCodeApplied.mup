@@ -4,7 +4,7 @@
   "formatVersion": 2,
   "ideas": {
     "1": {
-      "title": "vector",
+      "title": "PVector",
       "id": 2,
       "ideas": {
         "1": {
@@ -72,6 +72,138 @@
               }
             }
           }
+        },
+        "3": {
+          "title": "a class",
+          "id": 16,
+          "ideas": {
+            "1": {
+              "title": "fields",
+              "id": 17,
+              "ideas": {
+                "1": {
+                  "title": "x, y, z",
+                  "id": 18,
+                  "ideas": {
+                    "1": {
+                      "title": "we deal with 2d mostly",
+                      "id": 19,
+                      "attr": {
+                        "style": {
+                          "background": "#008080"
+                        }
+                      }
+                    },
+                    "2": {
+                      "title": "location = new PVector(x, y);",
+                      "id": 20,
+                      "ideas": {
+                        "1": {
+                          "title": "rewrite all x, y with location.x and location.y",
+                          "id": 22,
+                          "ideas": {},
+                          "attr": {
+                            "style": {
+                              "background": "#008080"
+                            }
+                          }
+                        },
+                        "2": {
+                          "title": "rewrite all xspeed, yspeed with velocity.x, velocity.y",
+                          "id": 23,
+                          "attr": {
+                            "style": {
+                              "background": "#008080"
+                            }
+                          }
+                        }
+                      },
+                      "attr": {
+                        "style": {
+                          "background": "#008080"
+                        }
+                      }
+                    },
+                    "1.5": {
+                      "title": "float x, y;",
+                      "id": 21,
+                      "attr": {
+                        "style": {
+                          "background": "#008080"
+                        }
+                      }
+                    }
+                  },
+                  "attr": {
+                    "style": {
+                      "background": "#008080"
+                    }
+                  }
+                }
+              },
+              "attr": {
+                "style": {
+                  "background": "#008080"
+                }
+              }
+            },
+            "2": {
+              "title": "addition between PVectors",
+              "id": 25,
+              "ideas": {
+                "1": {
+                  "title": "not using location.x + velocity.x",
+                  "id": 26,
+                  "ideas": {
+                    "1": {
+                      "title": "location.add(velocity)",
+                      "id": 27,
+                      "attr": {
+                        "style": {
+                          "background": "#008080"
+                        }
+                      }
+                    }
+                  },
+                  "attr": {
+                    "style": {
+                      "background": "#008080"
+                    }
+                  }
+                },
+                "2": {
+                  "title": "within one PVector",
+                  "id": 28,
+                  "ideas": {
+                    "1": {
+                      "title": "velocity.y *= -1",
+                      "id": 29,
+                      "attr": {
+                        "style": {
+                          "background": "#008080"
+                        }
+                      }
+                    }
+                  },
+                  "attr": {
+                    "style": {
+                      "background": "#008080"
+                    }
+                  }
+                }
+              },
+              "attr": {
+                "style": {
+                  "background": "#008080"
+                }
+              }
+            }
+          },
+          "attr": {
+            "style": {
+              "background": "#008080"
+            }
+          }
         }
       }
     },
@@ -97,5 +229,18 @@
   },
   "attr": {
     "style": {}
-  }
+  },
+  "links": [
+    {
+      "ideaIdFrom": 21,
+      "ideaIdTo": 20,
+      "attr": {
+        "style": {
+          "color": "#FF0000",
+          "lineStyle": "dashed",
+          "arrow": true
+        }
+      }
+    }
+  ]
 }
